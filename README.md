@@ -1,6 +1,6 @@
 # CP3108 Report
 
- - [ ] Optimize reader in crate `ply_rs`
+ - [x] Optimize reader in crate `ply_rs`
  - [ ] Install cargo instrument 
  - [ ] Make the png background transparent
  - [ ] Custimizable methods in `Filter and Transform` binary
@@ -8,13 +8,9 @@
 ## Week 16
 
 ### Reader optimization
-- [Changes made](https://github.com/Fluci/ply-rs/compare/master...hungkhoaitay:master)
-- Highlight:
-
-Original | Optimal
------------- | -------------
-`fn set_property(&mut self, _property_name: String, _property: Property) {`{:.rust} | `fn set_property(&mut self, _property_name: &String, _property: Property) {`{:.rust}
-Content in the first column | Content in the second column
+- Original reading binary-file time: 450ms.
+- Here is the [changes](https://github.com/Fluci/ply-rs/compare/master...hungkhoaitay:master) that has been made.
+- Now the running time is reduced to be nearly 90ms :zany_face:
 
 
 ### Cargo instrument installation
