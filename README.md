@@ -17,5 +17,5 @@
 Installed `brew` and `openssl` version x86. However, facing new [issue](https://github.com/cmyr/cargo-instruments/issues/50) :sweat_smile:
 
 ### Organising package
-- `Installed `tree` by `$ brew install tree`
+- Installed `tree` by `$ brew install tree`
 
