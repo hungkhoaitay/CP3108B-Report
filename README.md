@@ -23,12 +23,12 @@ Installed `brew` and `openssl` version x86. However, facing new [issue](https://
 ### Error handling with directory of PLY files
 * Continuously play even when facing error with reading some files.
 * Different error handling:
-  * With file with appropriate extension but have empty content:
+   * With file with appropriate extension but have empty content:
 ```
 Problem with reading file:
     Unable to read the header of the input: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.ply
 ```
-  * With file with inappropriate extension (not `.ply`):
+   * With file with inappropriate extension (not `.ply`):
 ```
 Problem with reading file:
     Extension of file: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.txt expected to be .ply
