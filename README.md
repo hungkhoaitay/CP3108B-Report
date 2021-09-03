@@ -1,5 +1,6 @@
 # CP3108 Report
 
+ - [x] Error handling with directory of PLY files
  - [x] Optimize reader in crate `ply_rs`
  - [ ] Install cargo instrument 
  - [ ] Make the png background transparent
@@ -18,4 +19,18 @@ Installed `brew` and `openssl` version x86. However, facing new [issue](https://
 
 ### Organising package
 - Installed `tree` by `$ brew install tree`
+
+### Error handling with directory of PLY files
+- Continuously play even when facing error with reading some files.
+- Different error handling:
+  - With file with appropriate extension but have empty content:
+```
+Problem with reading file:
+    Unable to read the header of the input: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.ply
+```
+  - With file with inappropriate extension (not `.ply`):
+```
+Problem with reading file:
+    Extension of file: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.txt expected to be .ply
+```
 
