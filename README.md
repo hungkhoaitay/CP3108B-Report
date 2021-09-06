@@ -9,7 +9,7 @@
 ## Tasks
  - [x] Error handling with directory of PLY files
  - [x] Optimize reader in crate `ply_rs`
- - [x] [Display file name as the title of the window](###Display-file-name-as-the-title-of-the-window)
+ - [x] Display file name as the title of the window [see](#display-file-name-as-the-title-of-the-window)
  - [ ] Install cargo instrument 
  - [ ] Make the png background transparent
  - [ ] Custimizable methods in `Filter and Transform` binary
