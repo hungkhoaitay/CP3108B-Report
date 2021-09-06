@@ -1,10 +1,10 @@
 # CP3108 Report
 
 ## Table of content
- - [Tasks](##Tasks)
- - [Week 17](##Week-17)
- - [Week 16](##Week-16)
- - [Usage](##Usage)
+ - [Tasks](##tasks)
+ - [Week 17](##week-17)
+ - [Week 16](##week-16)
+ - [Usage](##usage)
 
 ## Tasks
  - [x] Error handling with directory of PLY files
