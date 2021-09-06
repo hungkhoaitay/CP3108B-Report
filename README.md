@@ -21,24 +21,23 @@
 
 ### Display file name as the title of the window
  * Problem: Cannot distinguish between multiple windows.
- * Solve: 
-
-Added a field `title` into class `Points`:
-```rust
-/// Class of Points containing all necessary metadata
-pub struct Points {
-    /// Name of the points
-    pub (crate) title: Option<String>,
-    /// Data is a vector of type Point, storing all coordinate and colour data
-    pub data: Vec<Point>,
-    /// Stores the coordinate delta between the next and prev frames
-    pub delta_pos_vector: Vec<Point3<f32>>,
-    /// Stores the colour delta between the next and prev frames
-    pub delta_colours: Vec<Point3<f32>>,
-    /// Stores the next frame as a reference for mapping count and unmapped points
-    pub reference_frame: Vec<Point>,
-}
-```
+ * Solve: Added a field `title` into class `Points`:
+    ```rust
+    /// Class of Points containing all necessary metadata
+    pub struct Points {
+        /// Name of the points
+        pub (crate) title: Option<String>,
+        /// Data is a vector of type Point, storing all coordinate and colour data
+        pub data: Vec<Point>,
+        /// Stores the coordinate delta between the next and prev frames
+        pub delta_pos_vector: Vec<Point3<f32>>,
+        /// Stores the colour delta between the next and prev frames
+        pub delta_colours: Vec<Point3<f32>>,
+        /// Stores the next frame as a reference for mapping count and unmapped points
+        pub reference_frame: Vec<Point>,
+    }
+    ```
+  * Result: [see](https://drive.google.com/file/d/1W5XLVwHE8DLXqaMqnyRMlT2cMRL79CkD/view?usp=sharing)
 ### Print the `eye` and `at` information to the terminal
 
 ### Adjust the default `eye` and `at`
