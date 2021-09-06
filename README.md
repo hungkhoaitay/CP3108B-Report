@@ -13,10 +13,17 @@
  - [ ] Make the png background transparent
  - [ ] Custimizable methods in `Filter and Transform` binary
  - [x] Display file name as the title of the window [see](#display-file-name-as-the-title-of-the-window)
+ - [ ] Print the `eye` and `at` information to the terminal [see](#print-the-eye-and-at-information-to-the-terminal)
+ - [ ] Adjust the default `eye` and `at` [see](#adjust-the-default-eye-and-at)
+ - [ ] Customize the height and width of the window in `ply_view` [see](#customize-the-height-and-width-of-the-window-in-ply_view)
 
 ## Week 17
 
 ### Display file name as the title of the window
+#### Problem
+Cannot distinguish between multiple windows
+
+#### Solve
 Added a field `title` into class `Points`:
 ```rust
 /// Class of Points containing all necessary metadata
@@ -33,6 +40,20 @@ pub struct Points {
     pub reference_frame: Vec<Point>,
 }
 ```
+### Print the `eye` and `at` information to the terminal
+
+### Adjust the default `eye` and `at`
+#### Problem
+The gap above is too large
+
+#### Solve
+
+### Customize the height and width of the window in `ply_view`
+#### Problem
+Able to do the same with `ply_to_png`
+
+#### Solve
+
 
 ## Week 16
 
@@ -46,10 +67,18 @@ pub struct Points {
 Installed `brew` and `openssl` version x86. However, facing new [issue](https://github.com/cmyr/cargo-instruments/issues/50) :sweat_smile:
 
 ### Organising package
+#### Problem
+The package is needed to be organised
+
+#### Solve
 - Installed `tree` by `$ brew install tree`
 
 ### Error handling with directory of PLY files
-* Continuously play even when facing error with reading some files.
+#### Problem
+Stop playing video when facing error with reading some files.
+
+#### Solve
+* Handled the error in each file and print out error in the terminal
 * Different error handling:
    * With file with appropriate extension but have empty content:
         ```
