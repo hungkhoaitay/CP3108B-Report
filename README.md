@@ -20,10 +20,9 @@
 ## Week 17
 
 ### Display file name as the title of the window
-#### Problem
-Cannot distinguish between multiple windows
+ * Problem: Cannot distinguish between multiple windows.
+ * Solve: 
 
-#### Solve
 Added a field `title` into class `Points`:
 ```rust
 /// Class of Points containing all necessary metadata
@@ -43,53 +42,48 @@ pub struct Points {
 ### Print the `eye` and `at` information to the terminal
 
 ### Adjust the default `eye` and `at`
-#### Problem
-The gap above is too large
-
-#### Solve
+ * Problem: The gap above is too large.
+ * Solve
 
 ### Customize the height and width of the window in `ply_view`
-#### Problem
-Able to do the same with `ply_to_png`
-
-#### Solve
+ * Problem: Able to do the same with `ply_to_png`.
+ * Solve
 
 
 ## Week 16
 
 ### Reader optimization
-- Original reading binary-file time: 450ms.
-- Here is the [changes](https://github.com/Fluci/ply-rs/compare/master...hungkhoaitay:master) that has been made.
-- Now the running time is reduced to be nearly 90ms :zany_face:
+ * Problem: The variable `key` keep cloning, detected by [weitsang](https://github.com/weitsang) using [cargo-instruments](https://github.com/cmyr/cargo-instruments).
+ * Solve:
+   * Original reading binary-file time: 450ms.
+   * Here is the [changes](https://github.com/Fluci/ply-rs/compare/master...hungkhoaitay:master) that has been made.
+   * Now the running time is reduced to be nearly 90ms :zany_face:
 
 
 ### Cargo instrument installation
 Installed `brew` and `openssl` version x86. However, facing new [issue](https://github.com/cmyr/cargo-instruments/issues/50) :sweat_smile:
 
 ### Organising package
-#### Problem
-The package is needed to be organised
-
-#### Solve
-- Installed `tree` by `$ brew install tree`
+* Problem: The package is needed to be organised.
+* Solve
+  * Installed `tree` by `$ brew install tree` to present directoty.
 
 ### Error handling with directory of PLY files
-#### Problem
-Stop playing video when facing error with reading some files.
+ * Problem: Stop playing video when facing error with reading some files.
 
-#### Solve
-* Handled the error in each file and print out error in the terminal
-* Different error handling:
-   * With file with appropriate extension but have empty content:
-        ```
-        Problem with reading file:
-            Unable to read the header of the input: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.ply
-        ```
-   * With file with inappropriate extension (not `.ply`):
-        ```
-        Problem with reading file:
-            Extension of file: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.txt expected to be .ply
-        ```
+ * Solve
+   * Handled the error in each file and print out error in the terminal
+   * Different error handling:
+     * With file with appropriate extension but have empty content:
+          ```
+          Problem with reading file:
+              Unable to read the header of the input: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.ply
+          ```
+     * With file with inappropriate extension (not `.ply`):
+          ```
+          Problem with reading file:
+              Extension of file: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.txt expected to be .ply
+          ```
 
 ## Usage
 ```{.}
