@@ -2,9 +2,35 @@
 
  - [x] Error handling with directory of PLY files
  - [x] Optimize reader in crate `ply_rs`
+ - [x] Display file name as the title of the window
  - [ ] Install cargo instrument 
  - [ ] Make the png background transparent
  - [ ] Custimizable methods in `Filter and Transform` binary
+
+## Test
+```{.}
+$ cargo run --release --bin ply_view -- -i /Users/hungkhoaitay/Library/plySource/binary_longdress/longdress_vox10_1223.ply
+```
+
+## Week 17
+
+### Display file name as the title of the window
+Added a field `title` into class `Points`:
+```rust
+/// Class of Points containing all necessary metadata
+pub struct Points {
+    /// Name of the points
+    pub (crate) title: Option<String>,
+    /// Data is a vector of type Point, storing all coordinate and colour data
+    pub data: Vec<Point>,
+    /// Stores the coordinate delta between the next and prev frames
+    pub delta_pos_vector: Vec<Point3<f32>>,
+    /// Stores the colour delta between the next and prev frames
+    pub delta_colours: Vec<Point3<f32>>,
+    /// Stores the next frame as a reference for mapping count and unmapped points
+    pub reference_frame: Vec<Point>,
+}
+```
 
 ## Week 16
 
