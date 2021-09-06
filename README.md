@@ -1,16 +1,18 @@
 # CP3108 Report
 
+## Table of content
+ - [Tasks](##Tasks)
+ - [Week 17](##Week-17)
+ - [Week 16](##Week-16)
+ - [Usage](##Usage)
+
+## Tasks
  - [x] Error handling with directory of PLY files
  - [x] Optimize reader in crate `ply_rs`
  - [x] [Display file name as the title of the window](###Display-file-name-as-the-title-of-the-window)
  - [ ] Install cargo instrument 
  - [ ] Make the png background transparent
  - [ ] Custimizable methods in `Filter and Transform` binary
-
-## Test
-```{.}
-$ cargo run --release --bin ply_view -- -i /Users/hungkhoaitay/Library/plySource/binary_longdress/longdress_vox10_1223.ply
-```
 
 ## Week 17
 
@@ -60,3 +62,7 @@ Installed `brew` and `openssl` version x86. However, facing new [issue](https://
             Extension of file: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.txt expected to be .ply
         ```
 
+## Usage
+```{.}
+$ cargo run --release --bin ply_view -- -i /Users/hungkhoaitay/Library/plySource/binary_longdress/longdress_vox10_1223.ply
+```
