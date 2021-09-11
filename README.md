@@ -1,21 +1,23 @@
 # CP3108 Report
 
 ## Table of content
- - [Tasks](#tasks)
- - [Week 17](#week-17)
- - [Week 16](#week-16)
- - [Usage](#usage)
+ - [**Tasks**](#tasks)
+ - [**Week 17**](#week-17)
+   - [x] Display file name as the title of the window [see](#display-file-name-as-the-title-of-the-window)
+   - [x] Print the `eye` and `at` information to the terminal [see](#print-the-eye-and-at-information-to-the-terminal)
+   - [x] Adjust the default `eye` and `at` [see](#adjust-the-default-eye-and-at)
+   - [ ] Customize the height and width of the window in `ply_view` [see](#customize-the-height-and-width-of-the-window-in-ply_view) 
+ - [**Week 16**](#week-16)
+   - [x] Optimize reader in crate `ply_rs`
+   - [x] Error handling with directory of PLY files
+   - [ ] Cargo instrument installation
+   - [ ] Organising package
+ - [**Usage**](#usage)
 
-## Tasks
- - [x] Error handling with directory of PLY files
- - [x] Optimize reader in crate `ply_rs`
- - [ ] Install cargo instrument 
+## Task
  - [ ] Make the png background transparent
  - [ ] Custimizable methods in `Filter and Transform` binary
- - [x] Display file name as the title of the window [see](#display-file-name-as-the-title-of-the-window)
- - [x] Print the `eye` and `at` information to the terminal [see](#print-the-eye-and-at-information-to-the-terminal)
- - [x] Adjust the default `eye` and `at` [see](#adjust-the-default-eye-and-at)
- - [ ] Customize the height and width of the window in `ply_view` [see](#customize-the-height-and-width-of-the-window-in-ply_view)
+
 
 ## Week 17
 
