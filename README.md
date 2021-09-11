@@ -13,7 +13,7 @@
  - [ ] Make the png background transparent
  - [ ] Custimizable methods in `Filter and Transform` binary
  - [x] Display file name as the title of the window [see](#display-file-name-as-the-title-of-the-window)
- - [ ] Print the `eye` and `at` information to the terminal [see](#print-the-eye-and-at-information-to-the-terminal)
+ - [x] Print the `eye` and `at` information to the terminal [see](#print-the-eye-and-at-information-to-the-terminal)
  - [x] Adjust the default `eye` and `at` [see](#adjust-the-default-eye-and-at)
  - [ ] Customize the height and width of the window in `ply_view` [see](#customize-the-height-and-width-of-the-window-in-ply_view)
 
@@ -39,7 +39,9 @@
     ```
   * Result: [see](https://drive.google.com/file/d/1W5XLVwHE8DLXqaMqnyRMlT2cMRL79CkD/view?usp=sharing)
 ### Print the `eye` and `at` information to the terminal
-
+ * Problem: Gain runtime information of the positions of 'eye' and 'at'
+ * Solve: [commit](https://github.com/hungkhoaitay/in-summer-we-render/commit/55d588f7c092b881db23f759a2ac6c836bd3aa85)
+ * Tried native `relative_eq` in class `Point3` of crate `nalgebra` but the methods are private. Add dependency `approx` and do self compare.
 ### Adjust the default `eye` and `at`
  * Problem: The gap above is too large.
  * Solve:
