@@ -73,9 +73,9 @@
 
  * Problem: The variable `key` keep cloning, detected by [weitsang](https://github.com/weitsang) using [cargo-instruments](https://github.com/cmyr/cargo-instruments).
  * Solve:
-   * Original reading binary-file time: 450ms.
+   * Original reading binary-file time: __450ms__ :sweat_smile:
    * Here is the [changes](https://github.com/Fluci/ply-rs/compare/master...hungkhoaitay:master) that has been made.
-   * Now the running time is reduced to be nearly 90ms :zany_face:
+   * Now the running time is reduced to be nearly __90ms__ :zany_face:
 
 ### Error handling with directory of PLY files
 
