@@ -14,7 +14,7 @@
  - [ ] Custimizable methods in `Filter and Transform` binary
  - [x] Display file name as the title of the window [see](#display-file-name-as-the-title-of-the-window)
  - [ ] Print the `eye` and `at` information to the terminal [see](#print-the-eye-and-at-information-to-the-terminal)
- - [ ] Adjust the default `eye` and `at` [see](#adjust-the-default-eye-and-at)
+ - [x] Adjust the default `eye` and `at` [see](#adjust-the-default-eye-and-at)
  - [ ] Customize the height and width of the window in `ply_view` [see](#customize-the-height-and-width-of-the-window-in-ply_view)
 
 ## Week 17
@@ -42,7 +42,15 @@
 
 ### Adjust the default `eye` and `at`
  * Problem: The gap above is too large.
- * Solve
+ * Solve:
+   ```rust
+   const DEFAULT_EYE: Point3<f32> = Point3::new(0.0f32, 500.0, 2500.0);
+   const DEFAULT_AT: Point3<f32> = Point3::new(300.0f32, 800.0, 200.0);
+   ```
+   ```rust
+   const DEFAULT_EYE: Point3<f32> = Point3::new(0.0f32, 500.0, 1800.0);
+   const DEFAULT_AT: Point3<f32> = Point3::new(300.0f32, 500.0, 200.0);
+   ```
 
 ### Customize the height and width of the window in `ply_view`
  * Problem: Able to do the same with `ply_to_png`.
