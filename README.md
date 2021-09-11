@@ -3,15 +3,15 @@
 ## Table of content
  * [__Tasks__](#tasks)
  * [__Week 17__](#week-17)
-   * [x] Display file name as the title of the window [see](#display-file-name-as-the-title-of-the-window)
-   * [x] Print the `eye` and `at` information to the terminal [see](#print-the-eye-and-at-information-to-the-terminal)
-   * [x] Adjust the default `eye` and `at` [see](#adjust-the-default-eye-and-at)
-   * [ ] Customize the height and width of the window in `ply_view` [see](#customize-the-height-and-width-of-the-window-in-ply_view) 
+   * [x] [Display file name as the title of the window](#display-file-name-as-the-title-of-the-window)
+   * [x] [Print the `eye` and `at` information to the terminal](#print-the-eye-and-at-information-to-the-terminal)
+   * [x] [Adjust the default `eye` and `at`](#adjust-the-default-eye-and-at)
+   * [ ] [Customize the height and width of the window in `ply_view`](#customize-the-height-and-width-of-the-window-in-ply_view) 
  * [__Week 16__](#week-16)
-   * [x] Optimize reader in crate `ply_rs`
-   * [x] Error handling with directory of PLY files
-   * [ ] Cargo instrument installation
-   * [ ] Organising package
+   * [x] [Optimize reader in crate `ply_rs`](#reader-optimization)
+   * [x] [Error handling with directory of PLY files](#error-handling-with-directory-of-ply-files)
+   * [ ] [Cargo instrument installation](#cargo-instrument-installation)
+   * [ ] [Organising package](#organising-package)
  * [__Usage__](#usage)
 
 ## Task
@@ -77,16 +77,6 @@
    * Here is the [changes](https://github.com/Fluci/ply-rs/compare/master...hungkhoaitay:master) that has been made.
    * Now the running time is reduced to be nearly 90ms :zany_face:
 
-
-### Cargo instrument installation
-Installed `brew` and `openssl` version x86. However, facing new [issue](https://github.com/cmyr/cargo-instruments/issues/50) :sweat_smile:
-
-### Organising package
-
-* Problem: The package is needed to be organised.
-* Solve
-  * Installed `tree` by `$ brew install tree` to present directoty.
-
 ### Error handling with directory of PLY files
 
  * Problem: Stop playing video when facing error with reading some files.
@@ -104,6 +94,15 @@ Installed `brew` and `openssl` version x86. However, facing new [issue](https://
           Problem with reading file:
               Extension of file: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.txt expected to be .ply
           ```
+
+### Cargo instrument installation
+Installed `brew` and `openssl` version x86. However, facing new [issue](https://github.com/cmyr/cargo-instruments/issues/50) :sweat_smile:
+
+### Organising package
+
+* Problem: The package is needed to be organised.
+* Solve
+  * Installed `tree` by `$ brew install tree` to present directoty.
 
 ## Usage
 ```{.}
