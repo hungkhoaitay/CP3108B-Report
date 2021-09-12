@@ -65,8 +65,6 @@
  * [Result](https://drive.google.com/file/d/1DH8ischKss6y2wBDPCiBBHXB6KqXpdlf/view?usp=sharing)
 
 ### Cargo instrument installation
-Installed `brew` and `openssl` version x86. However, facing new [issue](https://github.com/cmyr/cargo-instruments/issues/50) :sweat_smile:
-
   * Solve
     * Installed `brew` Intel version and installed `cargo-instruments` via it sucessfully.
     * [Installation of `brew` Intel verstion](https://stackoverflow.com/questions/64951024/how-can-i-run-two-isolated-installations-of-homebrew)
