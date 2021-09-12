@@ -6,11 +6,11 @@
    * [x] [Display file name as the title of the window](#display-file-name-as-the-title-of-the-window)
    * [x] [Print the `eye` and `at` information to the terminal](#print-the-eye-and-at-information-to-the-terminal)
    * [x] [Adjust the default `eye` and `at`](#adjust-the-default-eye-and-at)
+   * [x] [Cargo instrument installation](#cargo-instrument-installation)
    * [ ] [Customize the height and width of the window in `ply_view`](#customize-the-height-and-width-of-the-window-in-ply_view) 
  * [__Week 16__](#week-16)
    * [x] [Optimize reader in crate `ply_rs`](#reader-optimization)
    * [x] [Error handling with directory of PLY files](#error-handling-with-directory-of-ply-files)
-   * [ ] [Cargo instrument installation](#cargo-instrument-installation)
    * [ ] [Organising package](#organising-package)
  * [__Usage__](#usage)
 
@@ -61,6 +61,15 @@
    const DEFAULT_AT: Point3<f32> = Point3::new(300.0f32, 500.0, 200.0);
    ```
 
+### Cargo instrument installation
+Installed `brew` and `openssl` version x86. However, facing new [issue](https://github.com/cmyr/cargo-instruments/issues/50) :sweat_smile:
+
+  * Solve
+    * Installed `brew` Intel version and installed `cargo-instruments` via it sucessfully.
+    * [Installation of `brew` Intel verstion](https://stackoverflow.com/questions/64951024/how-can-i-run-two-isolated-installations-of-homebrew)
+    * [Unknown Error solved](https://github.com/Homebrew/brew/issues/10368)
+
+
 ### Customize the height and width of the window in `ply_view`
 
  * Problem: Able to do the same with `ply_to_png`.
@@ -94,10 +103,7 @@
           Problem with reading file:
               Extension of file: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.txt expected to be .ply
           ```
-
-### Cargo instrument installation
-Installed `brew` and `openssl` version x86. However, facing new [issue](https://github.com/cmyr/cargo-instruments/issues/50) :sweat_smile:
-
+          
 ### Organising package
 
 * Problem: The package is needed to be organised.
