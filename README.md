@@ -40,7 +40,7 @@
         pub reference_frame: Vec<Point>,
     }
     ```
-  * Result: [see](https://drive.google.com/file/d/1W5XLVwHE8DLXqaMqnyRMlT2cMRL79CkD/view?usp=sharing)
+  * [Result](https://drive.google.com/file/d/1W5XLVwHE8DLXqaMqnyRMlT2cMRL79CkD/view?usp=sharing)
 
 ### Print the `eye` and `at` information to the terminal
 
@@ -48,6 +48,7 @@
  * Solve: [commit](https://github.com/hungkhoaitay/in-summer-we-render/commit/55d588f7c092b881db23f759a2ac6c836bd3aa85)
  * Tried native `relative_eq` in class `Point3` of crate `nalgebra` but the methods are private. Add dependency `approx` and do self compare.
  * Detect changes with `eye` and `at` but not from the `window`.
+ * [Result](https://drive.google.com/file/d/1NQWOk9PIPNAV4QWaZ35VoaOqXL_kiIL3/view?usp=sharing)
 
 ### Adjust the default `eye` and `at`
 
