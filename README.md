@@ -47,6 +47,7 @@
  * Problem: Gain runtime information of the positions of 'eye' and 'at'
  * Solve: [commit](https://github.com/hungkhoaitay/in-summer-we-render/commit/55d588f7c092b881db23f759a2ac6c836bd3aa85)
  * Tried native `relative_eq` in class `Point3` of crate `nalgebra` but the methods are private. Add dependency `approx` and do self compare.
+ * Detect changes with `eye` and `at` but not from the `window`.
 
 ### Adjust the default `eye` and `at`
 
