@@ -62,6 +62,7 @@
    const DEFAULT_EYE: Point3<f32> = Point3::new(0.0f32, 500.0, 1800.0);
    const DEFAULT_AT: Point3<f32> = Point3::new(300.0f32, 500.0, 200.0);
    ```
+ * [Result](https://drive.google.com/file/d/1DH8ischKss6y2wBDPCiBBHXB6KqXpdlf/view?usp=sharing)
 
 ### Cargo instrument installation
 Installed `brew` and `openssl` version x86. However, facing new [issue](https://github.com/cmyr/cargo-instruments/issues/50) :sweat_smile:
