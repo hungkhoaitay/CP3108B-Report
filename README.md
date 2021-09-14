@@ -7,7 +7,7 @@
    * [x] [Print the `eye` and `at` information to the terminal](#print-the-eye-and-at-information-to-the-terminal)
    * [x] [Adjust the default `eye` and `at`](#adjust-the-default-eye-and-at)
    * [x] [Cargo instrument installation](#cargo-instrument-installation)
-   * [X] [Customize the height and width of the window in `ply_view`](#customize-the-height-and-width-of-the-window-in-ply_view) 
+   * [x] [Customize the height and width of the window in `ply_view`](#customize-the-height-and-width-of-the-window-in-ply_view) 
  * [__Week 16__](#week-16)
    * [x] [Optimize reader in crate `ply_rs`](#reader-optimization)
    * [x] [Error handling with directory of PLY files](#error-handling-with-directory-of-ply-files)
