@@ -3,7 +3,7 @@
 - [Week 18](#week-18)
   - [Fix display file name as the title of the window](#fix-display-file-name-as-the-title-of-the-window)
   - [Display file name as the title of the window for PLY-directory](#display-file-name-as-the-title-of-the-window-for-ply-directory)
-  - [Autofil output of `ply_to_png`](#autofil-output-of-ply_to_png)
+  - [Autofill output of `ply_to_png`](#autofill-output-of-ply_to_png)
 - [Week 17](#week-17)
   - [Display file name as the title of the window](#display-file-name-as-the-title-of-the-window)
   - [Print the `eye` and `at` information to the terminal](#print-the-eye-and-at-information-to-the-terminal)
@@ -13,8 +13,9 @@
 - [Week 16](#week-16)
   - [Reader optimization](#reader-optimization)
   - [Error handling with directory of PLY files](#error-handling-with-directory-of-ply-files)
-  - [Organising package](#organising-package)
+  - [Organizing package](#organizing-package)
 - [Usage](#usage)
+
 
 ## Table of content
  * [__Tasks__](#tasks)
@@ -35,7 +36,7 @@
 
 ## Task
  * [ ] Make the png background transparent
- * [ ] Custimizable methods in `Filter and Transform` binary
+ * [ ] Customizable methods in `Filter and Transform` binary
 
 ## Week 18
 
@@ -76,7 +77,7 @@
    ```
    * -> [Result](https://drive.google.com/file/d/1Wcc_N08JRkk7fbg0ss2fvFMaI3o73g5n/view?usp=sharing)
  
-### Autofil output of `ply_to_png`
+### Autofill output of `ply_to_png`
 
  * [Pull request](https://github.com/hungkhoaitay/in-summer-we-render/pull/5/files)
  * Results:
@@ -157,8 +158,8 @@
 
 ### Cargo instrument installation
   * Solve
-    * Installed `brew` Intel version and installed `cargo-instruments` via it sucessfully.
-    * [Installation of `brew` Intel verstion](https://stackoverflow.com/questions/64951024/how-can-i-run-two-isolated-installations-of-homebrew)
+    * Installed `brew` Intel version and installed `cargo-instruments` via it successfully.
+    * [Installation of `brew` Intel version](https://stackoverflow.com/questions/64951024/how-can-i-run-two-isolated-installations-of-homebrew)
     * [Unknown Error solved](https://github.com/Homebrew/brew/issues/10368)
 
 
@@ -196,11 +197,11 @@
               Extension of file: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.txt expected to be .ply
           ```
           
-### Organising package
+### Organizing package
 
-* Problem: The package is needed to be organised.
+* Problem: The package is needed to be organized.
 * Solve
-  * Installed `tree` by `$ brew install tree` to present directoty.
+  * Installed `tree` by `$ brew install tree` to present directory.
 
 ## Usage
 ```{.}
