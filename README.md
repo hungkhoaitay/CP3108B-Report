@@ -2,6 +2,9 @@
 
 ## Table of content
  * [__Tasks__](#tasks)
+ * [__Week 18__](#week-17)
+   * [x] [Fix display file name as the title of the window](#fix-display-file-name-as-the-title-of-the-window)
+   * [ ] [Display file name as the title of the window for PLY-directory](
  * [__Week 17__](#week-17)
    * [x] [Display file name as the title of the window](#display-file-name-as-the-title-of-the-window)
    * [x] [Print the `eye` and `at` information to the terminal](#print-the-eye-and-at-information-to-the-terminal)
@@ -18,6 +21,78 @@
  * [ ] Make the png background transparent
  * [ ] Custimizable methods in `Filter and Transform` binary
 
+## Week 18
+
+### Fix display file name as the title of the window
+
+  * Fix struct `Points`
+    ```rust
+    /// Class of Points containing all necessary metadata
+    pub struct Points {
+        /// Data is a vector of type Point, storing all coordinate and colour data
+        pub data: Vec<Point>,
+        /// Stores the coordinate delta between the next and prev frames
+        pub delta_pos_vector: Vec<Point3<f32>>,
+        /// Stores the colour delta between the next and prev frames
+        pub delta_colours: Vec<Point3<f32>>,
+        /// Stores the next frame as a reference for mapping count and unmapped points
+        pub reference_frame: Vec<Point>,
+    }
+    ```
+    
+ * New struct `Ply`
+    ```rust
+    pub struct Ply {
+        title: Option<PathBuf>,
+        points: Points,
+    }
+    ```
+    
+ * [Pull request](https://github.com/hungkhoaitay/in-summer-we-render/pull/5/files)
+
+### Display file name as the title of the window for PLY-directory
+
+ * [Pull request](https://github.com/hungkhoaitay/in-summer-we-render/pull/5/files)
+ * Results:
+   * <- Command:
+   ```
+   $ ply_view -i $plySource/binary_longdress/ -b=100,100,100
+   ```
+   * -> [Result](https://drive.google.com/file/d/1Wcc_N08JRkk7fbg0ss2fvFMaI3o73g5n/view?usp=sharing)
+ 
+### Autofil output of `ply_to_png`
+
+ * [Pull request](https://github.com/hungkhoaitay/in-summer-we-render/pull/5/files)
+ * Results:
+   * <- Command:
+   ```
+   $ ply_to_png -- -i $plySource/binary_longdress/longdress_vox10_1223.ply
+   ```
+   * -> Result
+   ```
+    Finished release [optimized + debuginfo] target(s) in 0.32s
+     Running `target/release/ply_to_png -i /Users/hungkhoaitay/Library/plySource//binary_longdress/longdress_vox10_1223.ply`
+   Image saved to "longdress_vox10_1223.png"
+   ```
+   * -> Command:
+   ```
+   $ ply_to_ply -- -i $plySource/binary_longdress/longdress_vox10_1223.ply | ply_to_png
+   ```
+   * <- Result
+   ```
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on build directory
+    Finished release [optimized + debuginfo] target(s) in 0.39s
+     Running `target/release/ply_to_ply -i /Users/hungkhoaitay/Library/plySource//binary_longdress/longdress_vox10_1223.ply`
+    Finished release [optimized + debuginfo] target(s) in 0.42s
+     Running `target/release/ply_to_png`
+   Image saved to "output.png"
+   ```
 
 ## Week 17
 
