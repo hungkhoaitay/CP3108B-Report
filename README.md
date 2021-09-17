@@ -1,4 +1,20 @@
-# CP3108 Report
+- [Table of content](#table-of-content)
+- [Task](#task)
+- [Week 18](#week-18)
+  - [Fix display file name as the title of the window](#fix-display-file-name-as-the-title-of-the-window)
+  - [Display file name as the title of the window for PLY-directory](#display-file-name-as-the-title-of-the-window-for-ply-directory)
+  - [Autofil output of `ply_to_png`](#autofil-output-of-ply_to_png)
+- [Week 17](#week-17)
+  - [Display file name as the title of the window](#display-file-name-as-the-title-of-the-window)
+  - [Print the `eye` and `at` information to the terminal](#print-the-eye-and-at-information-to-the-terminal)
+  - [Adjust the default `eye` and `at`](#adjust-the-default-eye-and-at)
+  - [Cargo instrument installation](#cargo-instrument-installation)
+  - [Customize the height and width of the window in `ply_view`](#customize-the-height-and-width-of-the-window-in-ply_view)
+- [Week 16](#week-16)
+  - [Reader optimization](#reader-optimization)
+  - [Error handling with directory of PLY files](#error-handling-with-directory-of-ply-files)
+  - [Organising package](#organising-package)
+- [Usage](#usage)
 
 ## Table of content
  * [__Tasks__](#tasks)
