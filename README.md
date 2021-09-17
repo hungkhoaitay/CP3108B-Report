@@ -1,3 +1,4 @@
+## Table of content
 - [Table of content](#table-of-content)
 - [Task](#task)
 - [Week 18](#week-18)
@@ -16,27 +17,10 @@
   - [Organizing package](#organizing-package)
 - [Usage](#usage)
 
-
-## Table of content
- * [__Tasks__](#tasks)
- * [__Week 18__](#week-17)
-   * [x] [Fix display file name as the title of the window](#fix-display-file-name-as-the-title-of-the-window)
-   * [ ] [Display file name as the title of the window for PLY-directory](
- * [__Week 17__](#week-17)
-   * [x] [Display file name as the title of the window](#display-file-name-as-the-title-of-the-window)
-   * [x] [Print the `eye` and `at` information to the terminal](#print-the-eye-and-at-information-to-the-terminal)
-   * [x] [Adjust the default `eye` and `at`](#adjust-the-default-eye-and-at)
-   * [x] [Cargo instrument installation](#cargo-instrument-installation)
-   * [x] [Customize the height and width of the window in `ply_view`](#customize-the-height-and-width-of-the-window-in-ply_view) 
- * [__Week 16__](#week-16)
-   * [x] [Optimize reader in crate `ply_rs`](#reader-optimization)
-   * [x] [Error handling with directory of PLY files](#error-handling-with-directory-of-ply-files)
-   * [ ] [Organising package](#organising-package)
- * [__Usage__](#usage)
-
 ## Task
  * [ ] Make the png background transparent
  * [ ] Customizable methods in `Filter and Transform` binary
+ * [ ] [Organizing package](#organising-package)
 
 ## Week 18
 
