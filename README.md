@@ -134,7 +134,7 @@
       └── writer.rs
   ```
 
-  * Note: Haven't tested interpolate yet!
+* Note: Haven't tested interpolate yet!
 
 ## Week 17
 
