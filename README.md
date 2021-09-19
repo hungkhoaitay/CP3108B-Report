@@ -15,7 +15,7 @@
   - [Reader optimization](#reader-optimization)
   - [Error handling with directory of PLY files](#error-handling-with-directory-of-ply-files)
   - [Organizing package](#organizing-package)
-- [Usage](#usage)
+- [Usages](#usages)
 
 ## Task
  * [ ] Make the png background transparent
@@ -190,7 +190,13 @@
 ## Usages
 ```{.}
 $ cargo run --release --bin ply_view -- -i /Users/hungkhoaitay/Library/plySource/binary_longdress/longdress_vox10_1223.ply
+```
+```
 $ cargo run --release --bin ply_fat -- -i $plySourcePath/longdress_vox10_1223.ply --filter upper_half -t all_red | cargo run --release --bin ply_view
+```
+```
 $ cargo run --release --bin ply_to_png -- -i $plySourcePath/longdress_vox10_1223.ply -x 600 -w 400 -h 800 -o ouput.png
+```
+```
 $ cargo run --release --bin ply_to_ply -- -i $plySourcePath/longdress_vox10_1223.ply –f binary –o output.ply
 ```
