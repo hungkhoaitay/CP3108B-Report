@@ -189,14 +189,14 @@
 
 ## Usages
 ```{.}
-$ cargo run --release --bin ply_view -- -i /Users/hungkhoaitay/Library/plySource/binary_longdress/longdress_vox10_1223.ply
+$ cargo run --release --bin ply_view -- -i $plySource/binary_longdress/longdress_vox10_1223.ply
 ```
 ```
-$ cargo run --release --bin ply_fat -- -i $plySourcePath/longdress_vox10_1223.ply --filter upper_half -t all_red | cargo run --release --bin ply_view
+$ cargo run --release --bin ply_fat -- -i $plySource/binary_longdress/longdress_vox10_1223.ply --filter upper_half -t all_red | cargo run --release --bin ply_view
 ```
 ```
-$ cargo run --release --bin ply_to_png -- -i $plySourcePath/longdress_vox10_1223.ply -x 600 -w 400 -h 800 -o ouput.png
+$ cargo run --release --bin ply_to_png -- -i $plySource/binary_longdress/longdress_vox10_1223.ply -x 600 -w 400 -h 800 -o ouput.png
 ```
 ```
-$ cargo run --release --bin ply_to_ply -- -i $plySourcePath/longdress_vox10_1223.ply –f binary –o output.ply
+$ cargo run --release --bin ply_to_ply -- -i $plySource/binary_longdress/longdress_vox10_1223.ply –f binary –o output.ply
 ```
