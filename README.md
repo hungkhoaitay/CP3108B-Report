@@ -5,6 +5,7 @@
   - [Fix display file name as the title of the window](#fix-display-file-name-as-the-title-of-the-window)
   - [Display file name as the title of the window for PLY-directory](#display-file-name-as-the-title-of-the-window-for-ply-directory)
   - [Autofill output of `ply_to_png`](#autofill-output-of-ply_to_png)
+  - [Organizing package](#organizing-package)
 - [Week 17](#week-17)
   - [Display file name as the title of the window](#display-file-name-as-the-title-of-the-window)
   - [Print the `eye` and `at` information to the terminal](#print-the-eye-and-at-information-to-the-terminal)
@@ -14,7 +15,6 @@
 - [Week 16](#week-16)
   - [Reader optimization](#reader-optimization)
   - [Error handling with directory of PLY files](#error-handling-with-directory-of-ply-files)
-  - [Organizing package](#organizing-package)
 - [Usages](#usages)
 
 ## Task
@@ -94,6 +94,47 @@
      Running `target/release/ply_to_png`
    Image saved to "output.png"
    ```
+
+### Organizing package
+
+* Problem: The package is needed to be organized.
+* Solve: Installed `tree` by `$ brew install tree` to present directory.
+* Result:
+  ```
+  src
+  ├── bin
+  │   ├── ply_fat.rs
+  │   ├── ply_interpolate.rs
+  │   ├── ply_to_ply.rs
+  │   ├── ply_to_png.rs
+  │   ├── ply_view.rs
+  │   └── test.rs
+  ├── examples
+  ├── lib.rs
+  ├── materials
+  │   ├── color.rs
+  │   ├── coordinate.rs
+  │   ├── mod.rs
+  │   ├── params.rs
+  │   ├── ply.rs
+  │   ├── ply_dir.rs
+  │   ├── point.rs
+  │   └── points.rs
+  ├── methods
+  │   ├── filter.rs
+  │   ├── mod.rs
+  │   └── transform.rs
+  └── tool
+      ├── fat.rs
+      ├── interpolate.rs
+      ├── interpolate_controller.rs
+      ├── mod.rs
+      ├── reader.rs
+      ├── renderer.rs
+      └── writer.rs
+  ```
+
+  * Note: Haven't tested interpolate yet!
 
 ## Week 17
 
@@ -180,12 +221,6 @@
           Problem with reading file:
               Extension of file: /Users/hungkhoaitay/Library/plySource/binary_longdress/error_file.txt expected to be .ply
           ```
-          
-### Organizing package
-
-* Problem: The package is needed to be organized.
-* Solve
-  * Installed `tree` by `$ brew install tree` to present directory.
 
 ## Usages
 ```{.}
