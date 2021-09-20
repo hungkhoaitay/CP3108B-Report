@@ -20,7 +20,9 @@
 ## Task
  * [ ] Make the png background transparent
  * [ ] Customizable methods in `Filter and Transform` binary
- * [ ] [Organizing package](#organising-package)
+ * [ ] Pause and play
+ * [ ] Information print
+ * [ ] Cargo instruments
 
 ## Week 18
 
