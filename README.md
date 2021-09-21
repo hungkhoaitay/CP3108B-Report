@@ -1,6 +1,9 @@
 ## Table of content
 - [Table of content](#table-of-content)
 - [Task](#task)
+- [Week 19](#week-19)
+  - [Refactoring part 2](#refactoring-part-2)
+  - [Information print (GUI)](#information-print-gui)
 - [Week 18](#week-18)
   - [Fix display file name as the title of the window](#fix-display-file-name-as-the-title-of-the-window)
   - [Display file name as the title of the window for PLY-directory](#display-file-name-as-the-title-of-the-window-for-ply-directory)
@@ -23,6 +26,57 @@
  * [ ] Pause and play
  * [ ] Information print
  * [ ] Cargo instruments
+
+## Week 19
+
+### Refactoring part 2
+
+  * [Pull request](https://github.com/hungkhoaitay/in-summer-we-render/pull/8/files)
+  * Results:
+    ```
+    src
+    ├── bin
+    │   ├── ply_fat.rs
+    │   ├── ply_interpolate.rs
+    │   ├── ply_to_ply.rs
+    │   ├── ply_to_png.rs
+    │   ├── ply_view.rs
+    │   └── test.rs
+    ├── examples
+    ├── io
+    │   ├── mod.rs
+    │   ├── reader.rs
+    │   └── writer.rs
+    ├── lib.rs
+    ├── ply.rs
+    ├── ply_dir.rs
+    ├── pointcloud
+    │   ├── color.rs
+    │   ├── coordinate.rs
+    │   ├── mod.rs
+    │   ├── params.rs
+    │   ├── point.rs
+    │   └── points.rs
+    ├── processing
+    │   ├── filter_and_transform
+    │   │   ├── fat.rs
+    │   │   ├── filter.rs
+    │   │   ├── mod.rs
+    │   │   └── transform.rs
+    │   ├── interpolate.rs
+    │   ├── interpolate_controller.rs
+    │   └── mod.rs
+    └── render
+        ├── gui.rs
+        ├── gui_states.rs
+        ├── mod.rs
+        └── renderer.rs
+    ```
+
+### Information print (GUI)
+  * [Pull request](https://github.com/hungkhoaitay/in-summer-we-render/pull/7/files)
+  * Using feature `conrod` of dependency `kiss3d`
+  * [Result](https://drive.google.com/drive/folders/1-PPZ7oOJJddoioYzD0v60zmD_nV0n6Qd?usp=sharing)
 
 ## Week 18
 
