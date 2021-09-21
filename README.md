@@ -4,6 +4,7 @@
 - [Week 19](#week-19)
   - [Refactoring part 2](#refactoring-part-2)
   - [Information print (GUI)](#information-print-gui)
+  - [Keyboard Input (Draft)](#keyboard-input-draft)
 - [Week 18](#week-18)
   - [Fix display file name as the title of the window](#fix-display-file-name-as-the-title-of-the-window)
   - [Display file name as the title of the window for PLY-directory](#display-file-name-as-the-title-of-the-window-for-ply-directory)
@@ -77,6 +78,12 @@
   * [Pull request](https://github.com/hungkhoaitay/in-summer-we-render/pull/7/files)
   * Using feature `conrod` of dependency `kiss3d`
   * [Result](https://drive.google.com/drive/folders/1-PPZ7oOJJddoioYzD0v60zmD_nV0n6Qd?usp=sharing)
+
+### Keyboard Input (Draft)
+  * [Pull request](https://github.com/hungkhoaitay/in-summer-we-render/pull/9/files)
+  * Using module `event` in feature `conrod` of dependency `kiss3d`
+  * [Result for press 'I'](https://drive.google.com/file/d/1-qDjGRFglghwwr1-zXe0Cj6yjta2MkvV/view?usp=sharing) 
+  * [Result for press 'Space'](https://drive.google.com/file/d/1-phOfkROmKJmKsfnPPUWiJrh7kqszpfH/view?usp=sharing)
 
 ## Week 18
 
