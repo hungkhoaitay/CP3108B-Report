@@ -1,6 +1,10 @@
 ## Table of content
 - [Table of content](#table-of-content)
 - [Task](#task)
+- [Week 20](#week-20)
+  - [Refactoring part 3: Fail](#refactoring-part-3-fail)
+  - [Cargo instruments](#cargo-instruments)
+  - [Clipboard initialize](#clipboard-initialize)
 - [Week 19](#week-19)
   - [Refactoring part 2](#refactoring-part-2)
   - [Information print (GUI)](#information-print-gui)
@@ -24,9 +28,18 @@
 ## Task
  * [ ] Make the png background transparent
  * [ ] Customizable methods in `Filter and Transform` binary
- * [ ] Pause and play
  * [ ] Information print
  * [ ] Cargo instruments
+
+## Week 20
+
+### Refactoring part 3: Fail
+
+### Cargo instruments
+* [Issue](https://github.com/hungkhoaitay/in-summer-we-render/issues/13)
+
+### Clipboard initialize
+* [Pull request](https://github.com/hungkhoaitay/in-summer-we-render/pull/14)
 
 ## Week 19
 
